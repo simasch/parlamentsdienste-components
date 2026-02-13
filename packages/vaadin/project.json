@@ -1,0 +1,23 @@
+{
+    "name": "vaadin",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "packages/vaadin/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "mvn clean compile -f packages/vaadin/pom.xml",
+                "cwd": "{workspaceRoot}"
+            }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "mvn test -f packages/vaadin/pom.xml",
+                "cwd": "{workspaceRoot}"
+            }
+        }
+    }
+}
