@@ -5,6 +5,5 @@ node_modules
 target
 .mvn/wrapper/maven-wrapper.jar
 
-src/main/fronend/generated
-src/main/fronend/index.html
-
+src/main/frontend/generated
+src/main/frontend/index.html
