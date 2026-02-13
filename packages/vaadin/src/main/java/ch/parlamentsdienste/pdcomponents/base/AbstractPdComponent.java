@@ -1,6 +1,7 @@
 package ch.parlamentsdienste.pdcomponents.base;
 
 import com.vaadin.flow.component.Component;
+import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import tools.jackson.databind.JsonNode;
 import tools.jackson.databind.node.BaseJsonNode;
@@ -12,6 +13,8 @@ import java.util.function.Function;
  * Base class for all pd-* web component wrappers.
  * Provides the @NpmPackage annotation and common property helpers.
  */
+@CssImport("@parlamentsdienste/pdcomponents-core/styles/parlamentsdienstecore.css")
+@CssImport("@parlamentsdienste/pdcomponents-core/styles/typography.css")
 @NpmPackage(value = "@parlamentsdienste/pdcomponents-core", version = "4.0.0-rc.2")
 public abstract class AbstractPdComponent extends Component {
 

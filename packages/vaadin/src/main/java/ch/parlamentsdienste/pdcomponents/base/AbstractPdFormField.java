@@ -3,6 +3,7 @@ package ch.parlamentsdienste.pdcomponents.base;
 import com.vaadin.flow.component.AbstractSinglePropertyField;
 import com.vaadin.flow.component.HasLabel;
 import com.vaadin.flow.component.HasValidation;
+import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.NpmPackage;
 import com.vaadin.flow.function.SerializableFunction;
 
@@ -13,6 +14,8 @@ import com.vaadin.flow.function.SerializableFunction;
  * @param <C> the component type
  * @param <T> the value type
  */
+@CssImport("@parlamentsdienste/pdcomponents-core/styles/parlamentsdienstecore.css")
+@CssImport("@parlamentsdienste/pdcomponents-core/styles/typography.css")
 @NpmPackage(value = "@parlamentsdienste/pdcomponents-core", version = "4.0.0-rc.2")
 public abstract class AbstractPdFormField<C extends AbstractPdFormField<C, T>, T>
         extends AbstractSinglePropertyField<C, T>

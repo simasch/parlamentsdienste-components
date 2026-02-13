@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @StyleSheet(Lumo.STYLESHEET)
 @StyleSheet(Lumo.UTILITY_STYLESHEET)
-@StyleSheet("styles/styles.css")
+@StyleSheet("styles.css")
 @SpringBootApplication
 public class VaadinTestApplication implements AppShellConfigurator {
 
